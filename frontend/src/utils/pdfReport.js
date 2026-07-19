@@ -8,7 +8,7 @@ import QRCode from "qrcode";
 
 const LIVE_DEMO_URL = "https://codeguard-ai-umber.vercel.app";
 const GITHUB_URL = "https://github.com/Ritish363/codeguard-ai";
-const CONTACT_EMAIL = "your-ritishoswal@gmail.com"; // your email
+const CONTACT_EMAIL = "ritishoswal@gmail.com"; // your email
 
 const PDF_VERSION = "1.0";
 const ENGINE_VERSION = "CodeGuard AI v1.0";
