@@ -36,7 +36,6 @@ def review(request: CodeRequest):
 
     issues = analyze_code(code)
     from rule_details import RULE_DETAILS
-    from rule_details import RULE_DETAILS
 
     for issue in issues:
         details = RULE_DETAILS.get(issue.get("rule"))

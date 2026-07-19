@@ -16,15 +16,11 @@ import ScanHistory, {
   clearScanHistory,
 } from "../components/ScanHistory";
 
-const SAMPLE_CODE = `password = "admin"
+const SAMPLE_CODE = `# Welcome to CodeGuard AI
+# Paste your Python code here.
+# Upload a .py file or click "Sample" to try a demo.
 
-while True:
-    pass
-
-try:
-    pass
-except:
-    pass`;
+`;
 
 function Home() {
   const navigate = useNavigate();
