@@ -224,3 +224,11 @@ GitHub: https://github.com/Ritish363
 ## License
 
 This project is intended for educational, portfolio, and demonstration purposes.
+
+## Live Demo
+
+Frontend:
+https://codeguard-ai-umber.vercel.app
+
+Backend API:
+https://codeguard-ai-backend-iy6j.onrender.com
