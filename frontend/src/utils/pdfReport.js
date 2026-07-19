@@ -6,9 +6,9 @@ import QRCode from "qrcode";
 // Report metadata / links (placeholders — update with real values)
 // ===========================
 
-const LIVE_DEMO_URL = "https://codeguard-ai.example.com"; // TODO: replace with your deployed URL
-const GITHUB_URL = "https://github.com/your-username/codeguard-ai"; // TODO: replace with your repo URL
-const CONTACT_EMAIL = "contact@codeguard-ai.example.com"; // TODO: replace with your email
+const LIVE_DEMO_URL = "https://codeguard-ai-umber.vercel.app";
+const GITHUB_URL = "https://github.com/Ritish363/codeguard-ai";
+const CONTACT_EMAIL = "your-ritishoswal@gmail.com"; // your email
 
 const PDF_VERSION = "1.0";
 const ENGINE_VERSION = "CodeGuard AI v1.0";
