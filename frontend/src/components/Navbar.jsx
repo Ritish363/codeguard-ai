@@ -51,7 +51,7 @@ function Navbar() {
 
         <div className="flex items-center gap-3">
           <a
-            href="https://github.com"
+            href="https://github.com/Ritish363/codeguard-ai"
             target="_blank"
             rel="noreferrer"
             className="w-9 h-9 rounded-xl border border-[var(--border-color)] flex items-center justify-center hover:bg-[var(--surface-alt)] transition text-[var(--text-primary)]"
