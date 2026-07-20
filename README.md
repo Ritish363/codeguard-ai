@@ -232,3 +232,9 @@ https://codeguard-ai-umber.vercel.app
 
 Backend API:
 https://codeguard-ai-backend-iy6j.onrender.com
+
+---
+
+#Note:
+The backend is hosted on Render Free Tier.
+The first request after inactivity may take around 30–60 seconds.
