@@ -29,6 +29,7 @@ function Home() {
 
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [loadingText, setLoadingText] = useState("");
   const [history, setHistory] = useState(() => getScanHistory());
   const resultsRef = useRef(null);
 
@@ -52,6 +53,10 @@ function Home() {
   }
 
   setLoading(true);
+
+  setLoadingText(
+    "Starting analysis... The server may take up to 60 seconds to wake up on the first request."
+  );
 
     try {
       const response = await fetch(`${import.meta.env.VITE_API_URL}/review`, {
@@ -96,8 +101,9 @@ function Home() {
       });
       toast.error("Backend connection failed");
     } finally {
-      setLoading(false);
-    }
+  setLoading(false);
+  setLoadingText("");
+}
   };
 
   const handleClearHistory = () => {
@@ -116,11 +122,12 @@ function Home() {
 
       <div className="max-w-7xl mx-auto px-8 py-8 space-y-10 flex-1 w-full">
         <EditorSection
-          code={code}
-          setCode={setCode}
-          analyzeCode={analyzeCode}
-          loading={loading}
-        />
+        code={code}
+        setCode={setCode}
+        analyzeCode={analyzeCode}
+        loading={loading}
+        loadingText={loadingText}
+      />
 
         {history.length > 0 && (
           <ScanHistory history={history} onClear={handleClearHistory} />

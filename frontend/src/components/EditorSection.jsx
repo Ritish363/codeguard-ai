@@ -5,6 +5,7 @@ import { LoaderCircle, CheckCircle2, Circle } from "lucide-react";
 import { toast } from "./Toast";
 
 const STAGES = [
+  "Waking up analysis server (first request may take up to 60 seconds)...",
   "Parsing Python source...",
   "Building AST...",
   "Running security rules...",
@@ -13,6 +14,8 @@ const STAGES = [
 ];
 
 const LOG_LINES = [
+  "[INFO] Connecting to CodeGuard AI server...",
+  "[INFO] Waking up analysis engine (first request may take up to 60 seconds)...",
   "[INFO] Loading parser...",
   "[INFO] AST generated...",
   "[INFO] Running security rules...",
